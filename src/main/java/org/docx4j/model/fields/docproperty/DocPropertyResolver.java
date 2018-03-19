@@ -102,8 +102,8 @@ public class DocPropertyResolver {
 		else if ("Comments".equals(key)) return getFirstValue(coreProperties.getDescription().getValue());
 		else if ("CreateTime".equals(key)) return getFirstValue(coreProperties.getCreated());
 		else if ("LastPrinted".equals(key)) return coreProperties.getLastPrinted(); // XMLGregorianCalendar
-		else if ("LastSavedBy".equals(key)) return getFirstValue(coreProperties.getModified());
-		else if ("LastSavedTime".equals(key)) return coreProperties.getLastModifiedBy();
+		else if ("LastSavedTime".equals(key)) return getFirstValue(coreProperties.getModified());
+		else if ("LastSavedBy".equals(key)) return coreProperties.getLastModifiedBy();
 		else if ("RevisionNumber".equals(key)) return coreProperties.getRevision();
 		else if ("Subject".equals(key)) return getFirstValue(coreProperties.getSubject());
 		else if ("Title".equals(key)) return getFirstValue(coreProperties.getTitle().getValue());
